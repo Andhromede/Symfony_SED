@@ -1,0 +1,29 @@
+body{
+    --bleu: #007FA0;
+    --black: #181818;
+    --or: #D0C994;
+}
+
+.bgBlack{
+    background-color: black;
+}
+
+
+/*********** general ***********/  
+    body{
+        font-family: 'verdana', 'Halant', 'arial';
+
+        --grisNavbar:#343B3E;
+        --noir:#111111;
+        --noirClair:#1A1814;
+        --dore:#CDA45E;
+    }
+
+/*********** margin sous navbar ***********/
+    .affichage{
+        margin-top: 9em;
+    }
+    
+    .mt-200{
+        margin-top: 200px;
+    }

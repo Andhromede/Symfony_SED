@@ -1,0 +1,392 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Info - SED
+{% endblock %}
+
+{% block body %}
+	<link rel="stylesheet" href="{{ asset('assets/css/a_propos.css')}}">
+
+
+	<div class="container-fluid">
+
+        {# IMAGE #}
+		<div class="row justify-content-center  my-3">
+			<img src="{{ asset('assets/img/main2.jpg') }}" alt="femme_folie" class="">
+		</div>
+
+		<div class="bg-body">
+			<h1 class="text-center font-weight-bold my-5 text-uppercase">Résumé</h1>
+
+			<br>
+
+        {# Ligne 1 #}
+			<div class="row justify-content-center">
+			
+                {# NAISSANCE DIFFICILE N°1 #}
+				<div class=" col-md-10 col-lg-3 mx-3 mb-3 mx-sm">
+                    {# card 1 #}
+                    <div class="card mx-auto my-auto cadreBlanc heightCard text-center">
+                        <h5 class="card-title">Une naissance difficile</h5> 
+                        <img src="{{ asset('assets/img/femme3.jpg') }}" alt="stetoscope" class="card-img-top mh-img mx-auto">
+                        <div class="card-body">     
+                            <p class="card-text">Le Syndrome (ou maladie) d’Ehlers-Danlos est l’expression clinique d’une atteinte du tissu conjonctif (80% environ des constituants d’un corps humain (...)</p>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLong">
+								Lire la suite
+							</button>
+                        </div>
+                    </div>
+
+					{# Modal #}
+					<div>
+						<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title text-dark" id="exampleModalLongTitle">Une naissance difficile :</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body text-dark">
+										Le Syndrome (ou maladie) d’Ehlers-Danlos est l’expression clinique d’une atteinte du tissu conjonctif (80% environ des constituants d’un corps humain), d’origine génétique, touchant la quasi-totalité des organes, ce qui explique la richesse de sa symptomatologie qui surprend les médecins alors qu’elle constitue, en soi, un argument diagnostic très fort, témoignant du caractère diffus des lésions. La description initiale est le fait de deux dermatologues : Edvard Ehlers à Copenhague, en 1900, et Alexandre Danlos, à Paris, en 1908. De ces premières descriptions, initialement dominées par les signes cutanées, les médecins ont retenu, la présence d’une peau fragile, hémorragique et étirable (cutis laxa) d’une part et d’une mobilité articulaire excessive d’autre part. C’est à ces deux éléments cliniques que l’on a longtemps réduit la description. Leur absence, fréquente pour l’étirabilité, plus rare pour l’hypermobilité, conduit encore très souvent des médecins, mal informés, à éliminer un diagnostic, pourtant évident par ailleurs. Dans la symptomatologie très diversifiée et variable de cette maladie l’absence d’un signe ne permet pas d’éliminer le diagnostic.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                {# PARADOXE ... N°2 #}
+				<div class=" col-md-10 col-lg-3 mx-3 mb-3 mx-sm">
+                    {# card 2 #}
+                    <div class="card mx-auto my-auto cadreBlanc heightCard text-center">
+                        <h5 class="card-title">Une symptomatologie riche</h5> 
+
+                        {# Image #}
+                        <img src="{{ asset('assets/img/steto.jpg') }}" alt="stetoscope" class="card-img-top mh-img mx-auto">
+                        <div class="card-body">
+    
+                            <p class="card-text">Une telle attitude fait fi des nombreuses autres manifestations cliniques évocatrices et souvent dominantes, notamment les douleurs, la fatigue, les reflux gastriques (...)</p>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLongTwo">
+								Lire la suite
+							</button>
+                        </div>
+                    </div>
+
+					{# Modal #}
+					<div>
+						<div class="modal fade" id="exampleModalLongTwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTwo" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title text-dark" id="exampleModalLongTwo">Le paradoxe d’une symptomatologie riche qui nuit au diagnostic :</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body text-dark">
+										Une telle attitude fait fi des nombreuses autres manifestations cliniques évocatrices et souvent dominantes, notamment les douleurs, la fatigue, les reflux gastriques, les troubles de la perception du corps et du contrôle des mouvements, les troubles auditifs et visuels, les manifestations cognitives et les difficultés respiratoires Leur rattachement à une pathologie différente est à l’origine de bien des erreurs et à de longues errances diagnostiques. Certains de nos patients ont été traités simultanément pour 4 ou 5 maladies différentes du fait de symptômes qui sont tous liés, en fait, à une même cause : Ehlers-Danlos. On perçoit les risques thérapeutiques encourus quand on sait la contrindication formelle de bon nombre de traitements médicaux ou chirurgicaux dans ce syndrome. Devant l’échec des traitements, la persistance des symptômes dont l’intensité contraste avec la négativité des tests biologiques et d’imagerie (IRM articulaires surtout), conduit habituellement à une psychiatrisation abusive. Ces patients sont, très souvent, stigmatisés comme hypochondriaques, somatomorphe (terme codé qui tend à remplacer « fonctionnel » dans le jargon médical pour ne pas prononcer les termes d’hystérie, dépressifs ou, même, comme nous l’avons observé, « bipolaires ». Pour beaucoup, de façon plus précise et moins scientifique ils s’entendent dire ou suggérer que c’est dans leur tête ! L’apparence peut tromper les médecins non informés, déroutés devant des symptômes dont on ne leur a pas appris la signification mais que leurs patients leur expliquent pourtant fort bien.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                {# MALADIE ... N°3 #}
+				<div class=" col-md-10 col-lg-3 mx-3 mb-3 mx-sm">
+                    {# card 1 #}
+                    <div class="card mx-auto my-auto cadreBlanc heightCard text-center">
+                        <h5 class="card-title">Maladie ou curiosité de la nature ?</h5> 
+
+                        {# Image #}
+                        <img src="{{ asset('assets/img/femme2.jpg') }}" alt="stetoscope" class="card-img-top mh-img mx-auto">
+                        <div class="card-body">
+    
+                            <p class="card-text">L’impression générale qui ressort, jusqu’à maintenant, à l’écoute du discours médical, c’est la notion de la bénignité de ce syndrome, plutôt perçu par les médecins comme une curiosité de la Nature (...)</p>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLongThree">
+								Lire la suite
+							</button>
+                        </div>
+                    </div>
+
+					{# Modal #}
+					<div>
+						<div class="modal fade" id="exampleModalLongThree" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongThree" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title text-dark" id="exampleModalLongThree">Maladie ou curiosité de la nature sans conséquence pathologique ? :</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body text-dark">
+										L’impression générale qui ressort, jusqu’à maintenant, à l’écoute du discours médical, c’est la notion de la bénignité de ce syndrome, plutôt perçu par les médecins comme une curiosité de la Nature. Les images du contorsionniste et de l’artiste qui se montre dans les foires le visage recouvert avec la peau de son cou, font beaucoup de torts à la réputation de la maladie d’Ehlers-Danlos. La réalité est tout autre. Si la majorité des formes a une symptomatologie modérée, dans d’autres cas, le syndrome d’Ehlers-Danlos apparait comme une maladie qui peut être, à certains moments de la vie, très handicapante. Elle est alors à l’origine de souffrances importantes et d’exclusions sociales.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+
+
+
+        {# Ligne 2 #}
+			<div class="row justify-content-center">
+
+                {# MALADIE GENETIQUE N°4 #}
+				<div class=" col-md-10 col-lg-3 mx-3 mb-3 mx-sm">
+                    {# card 1 #}
+                    <div class="card mx-auto my-auto cadreBlanc heightCard text-center">
+                        <h5 class="card-title">Une maladie sans gène, victime de la dépréciation ...</h5> 
+                        <img src="{{ asset('assets/img/genes.jpg') }}" alt="stetoscope" class="card-img-top mh-img mx-auto">
+                        <div class="card-body">     
+                            <p class="card-text">La symptomatologie qui conduit au diagnostic est uniquement clinique, basée sur l’écoute de patient et de sa famille, l’examen clinique de la peau et des articulations. Il n’y a pas de test génétique disponible (...)</p>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLongTitleFour">
+								Lire la suite
+							</button>
+                        </div>
+                    </div>
+
+					{# Modal #}
+					<div>
+						<div class="modal fade" id="exampleModalLongTitleFour" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitleFour" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title text-dark" id="exampleModalLongTitleFour">Une maladie génétique, sans gène, victime de la dépréciation de la Clinique dans la pratique médicale actuelle.</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body text-dark">
+										La symptomatologie qui conduit au diagnostic est uniquement clinique, basée sur l’écoute de patient et de sa famille, l’examen clinique de la peau et des articulations. Il n’y a pas de test génétique disponible, ni de test biologique ou histologique fiable et spécifique. L’imagerie articulaire n’est d’aucune aide au diagnostic si ce n’est par sa négativité. Bref, pour la Médecine très imprégnée de biologie et d’imagerie qui est le plus souvent celle pratiquée aujourd’hui, ces patients sont « invisibles ». On peut donc, ici aussi, parler de « handicap » (ou mieux de maladie handicapante) « invisible », à l’instar de ce qui a été proposer (Pr. JL Truelle) à propos de certaines personnes traumatisées cérébrales. Non seulement, la nature et le groupement des symptômes rencontrés chez ces patients ne sont pas identifiés par les médecins mais, de surcroît, ils sont, ainsi que les situations de handicap qui en découlent, « intermittents ». Ceci a guidé, dans son choix de dénomination (« Les intermittents du handicap »), l’ASED qui est l’une des principales associations de personnes avec un syndrome d’Ehlers-Danlos. On comprend alors qu’à côté de la méconnaissance par le corps médical, vienne s’ajouter l’incompréhension, parfois accusatrice, de l’entourage. Tout ceci contribue à isoler, à culpabiliser, ces patients qui ne comprennent plus ce qui leur arrive. Ceci est encore aggravé par le fait de percevoir leur propre corps différemment depuis leur naissance et de manquer de références entre ce que la médecine définit comme un état normal ou un état pathologique. Il en résulte une très grande sous-estimation des souffrances et de l’état fonctionnel réel.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                {# CONNAITRE LE RISQUE ... N°5 #}
+				<div class=" col-md-10 col-lg-3 mx-3 mb-3 mx-sm">
+                    {# card 1 #}
+                    <div class="card mx-auto my-auto cadreBlanc heightCard text-center">
+                        <h5 class="card-title">Le risque arteriel</h5> 
+
+                        {# Image #}
+                        <img src="{{ asset('assets/img/tension2.jpg') }}" alt="stetoscope" class="card-img-top mh-img mx-auto">
+                        <div class="card-body">
+                            <p class="card-text">Connaître le risque artériel, le prévenir et le traiter, un nouveau progrès dans la maladie d’Ehlers-Danlos plutôt qu’une dramatisation abusive dans un contexte déjà difficile (...)</p>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLongFive">
+								Lire la suite
+							</button>
+                        </div>
+                    </div>
+
+					{# Modal #}
+					<div>
+						<div class="modal fade" id="exampleModalLongFive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongFive" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title text-dark" id="exampleModalLongFive">Connaître le risque artériel, le prévenir et le traiter, un nouveau progrès dans la maladie d’Ehlers-Danlos plutôt qu’une dramatisation abusive dans un contexte déjà difficile.</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body text-dark">
+										Plus récemment, l’accent a été mis sur des manifestations artérielles graves (anévrysmes, dissections) dans le syndrome d’Ehlers. Ce type de maladie d’Ehlers-Danlos qui reste exceptionnel a été récemment largement diffusé dans les publications médicales (aujourd’hui facilement accessibles à tous par Internet) qui ont mobilisé l’intérêt des médecins à tel point que certains déclarent vouloir se mobiliser que pour ce type de syndrome, délaissant les formes de très loin majoritaires qui sont, de ce fait, vraiment orphelines. En fait, comme nous l’avons constaté à plusieurs reprises , les atteintes de la paroi des artères ne sont pas l’apanage des formes que l’on a qualifiées de «vasculaires», et doivent être dépistées systématiquement pour être surveillées et, si besoin, traitées, Compte-tenu de ces précautions, la notion de complications artérielles ne doit pas inutilement assombrir le pronostic de ce syndrome qui, dans l’immense majorité des cas, est compatible avec une espérance de vie identique à celle du reste de la population. Certains médecins, par déviation, pensent, aujourd’hui, en entendant les noms d’Ehlers et de Danlos qu’il s’agit d’une maladie cardiaque ! Par opposition, d’autres, tel ce dermatologue dont nous avons récemment examiné la patiente, sont persuadés que c’est une maladie de peau sans aucun retentissement fonctionnel et l’écrivent dans un certificat destiné à la Maison départementale du handicap, excluant, de fait, une patiente de l’application de la Loi de 2005, destinée aux personnes en situations de handicap. C’est dire les divergences de visions de son syndrome qu’une personne peut rencontrer de la part de médecins et le travail d’information médicale énorme qui est à faire.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                {# DE LA TRANSMISSION ... N°6 #}
+				<div class=" col-md-10 col-lg-3 mx-3 mb-3 mx-sm">
+                    {# card 1 #}
+                    <div class="card mx-auto my-auto cadreBlanc heightCard text-center">
+                        <h5 class="card-title">La transmission familiale et contexte génétique</h5> 
+
+                        {# Image #}
+                        <img src="{{ asset('assets/img/main.jpg') }}" alt="stetoscope" class="card-img-top mh-img mx-auto">
+                        <div class="card-body">
+    
+                            <p class="card-text">Le caractère génétique de la maladie ou syndrome d’Ehlers-Danlos, n’est discuté par personne. C’est d’ailleurs un des arguments majeurs du diagnostic (...)</p>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLongSix">
+								Lire la suite
+							</button>
+                        </div>
+                    </div>
+
+					{# Modal #}
+					<div>
+						<div class="modal fade" id="exampleModalLongSix" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongSix" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title text-dark" id="exampleModalLongSix">De la transmission familiale et du contexte génétique de la maladie d’Ehlers-Danlos.</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body text-dark">
+										Le caractère génétique de la maladie ou syndrome d’Ehlers-Danlos, n’est discuté par personne. C’est d’ailleurs un des arguments majeurs du diagnostic : la découverte de cas familiaux identiques dans la famille. La transmission, à l’exception de formes rarissimes, est autosomique et donc indépendante du sexe. Ce mode de transmission implique que les deux sexes sont concernés. Pourtant, nous avons observé deux particularités : la nette dominance féminine et le non respect des lois de Mendel dans le mode de transmission. La prédominance féminine (82%) s’accompagne aussi d’une plus grande sévérité des symptômes comparativement aux hommes. Le facteur hormonal est probablement en cause, expliquant le majoration des symptômes à la puberté et après un accouchement, alors que les grossesses et l’allaitement peuvent s’accompagner d’une sédation importante des manifestations clinques. Ceci oriente vers une prise en compte thérapeutique du statut hormonal de la femme. La probabilité de transmission génétique n’est pas, comme dans les maladies autosomiques dominantes, d’un enfant sur deux (garçon ou fille) mais, dans notre expérience, de deux sur deux, voire trois sur trois ou cinq sur cinq ! Cette constatation doit être modulée par le fait que le niveau symptomatique est très diversifié ainsi que les conséquences fonctionnelles. Les formes à symptomatologie modeste sont, de loin, les plus nombreuses. Cette constatation induit la recherche d’explications génétiques utiles à la progression des connaissances dans un domaine qui apparait, trop souvent, comme régi par des à priori en décalage avec ce que vivent les patients et leurs familles. Il n’est pas exceptionnel que le père et la mère d’un enfant avec un Ehlers-Danlos soient tous les deux porteurs du gène, sans conséquence apparente sur la sévérité clinique dans notre expérience. Ceci est en faveur d’une diffusion du syndrome beaucoup plus importante que ce qui est habituellement annoncé.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+
+
+
+        {# Ligne 3 #}
+			<div class="row justify-content-center">
+
+                {# PREVALENCE N°7 #}
+				<div class=" col-md-10 col-lg-3 mx-3 mb-3 mx-sm">
+                    {# card 1 #}
+                    <div class="card mx-auto my-auto cadreBlanc heightCard text-center">
+                        <h5 class="card-title">De la prévalence (nombre de cas existants) de la maladie d’Ehlers-Danlos dans la population française.</h5> 
+                        
+						{# Image #}
+						<img src="{{ asset('assets/img/femme3.jpg') }}" alt="stetoscope" class="card-img-top mh-img mx-auto">
+                        <div class="card-body"> 
+
+                            <p class="card-text">Le nombre de cas annoncé par les sites spécialisés est très nettement sous-estimé et serait de 5000 (...)</p>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLongSeven">
+								Lire la suite
+							</button>
+                        </div>
+                    </div>
+
+					{# Modal #}
+					<div>
+						<div class="modal fade" id="exampleModalLongSeven" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongSeven" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title text-dark" id="exampleModalLongSeven">De la prévalence (nombre de cas existants) de la maladie d’Ehlers-Danlos dans la population française.</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body text-dark">
+										Le nombre de cas annoncé par les sites spécialisés est très nettement sous-estimé et serait de 5.000 Ce chiffre apparaît comme étant très en deçà de la réalité. En effet, à partir d’une seule consultation, nous avons identifié 1600 dossiers en une quinzaine d’année et reçu 850 personnes avec un SED patients, à l’Hôtel-Dieu en 2012. Le chiffre moyen des cas adressés par les médecins généralistes français qui ont appris à connaître les clés du diagnostic, à partir d’un premier patient que nous avons identifié, oscille entre 2 et 4. Le nombre de médecins généralistes inscrits au Conseil de l’Ordre est de plus de 100.000, dont 55.000 exerceraient exclusivement la Médecine générale. En combinant ces chiffres, on arrive à un résultat qui se chiffre en centaine de milliers de personne. Ceci apparaît suffisant pour considérer qu’il y a, là, un problème de Santé publique très important, surtout si l’on sait que ces personnes (hommes et femmes) transmettent la maladie sans le savoir, avec un potentiel de gravité impossible à préciser. La maladie d’Ehlers-Danlos n’est donc pas une maladie rare même si elle reste orpheline et exclue parce que rarement diagnostiquée.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                {# CONTRIBUTION PERSONNELLE ... N°8 #}
+				<div class=" col-md-10 col-lg-3 mx-3 mb-3 mx-sm">
+                    {# card 1 #}
+                    <div class="card mx-auto my-auto cadreBlanc heightCard text-center">
+                        <h5 class="card-title">Contribution personnelle à la maladie d’Ehlers-Danlos : actualisation de la clinique et mise en œuvre de traitements.</h5> 
+
+                        {# Image #}
+                        <img src="{{ asset('assets/img/ecrase.jpg') }}" alt="stetoscope" class="card-img-top mh-img mx-auto">
+                        <div class="card-body">
+    
+                            <p class="card-text">Notre connaissance de la maladie d’Ehlers-Danlos est celle que nous ont transmise les patients que nous avons reçus et traités. Par leur participation au diagnostic (...)</p>
+                            <button type="button" class="btn btn-danger mx-auto" data-toggle="modal" data-target="#exampleModalLongHeight">
+								Lire la suite
+							</button>
+                        </div>
+                    </div>
+
+					{# Modal #}
+					<div>
+						<div class="modal fade" id="exampleModalLongHeight" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongHeight" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title text-dark" id="exampleModalLongTwo">Contribution personnelle à la maladie d’Ehlers-Danlos : actualisation de la clinique et mise en œuvre de traitements.</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body text-dark">
+										Notre connaissance de la maladie d’Ehlers-Danlos est celle que nous ont transmise les patients que nous avons reçus et traités. Par leur participation au diagnostic et à la mise en place et l’évaluation des traitements, ils constituent, de fait, notre Laboratoire de recherche clinique sur ce syndrome. Pour cela, il fallait les regrouper en évitant des consultations inutiles avec ceux dont les symptômes n’avaient aucun lien avec Ehlers-Danlos. Après avoir recueilli les observations des 170 premiers patients, nous avons rédigé une description intégrant les données cliniques qui nous semblaient les plus caractéristique de ce tableau clinique et nous avons placé ce texte sur notre site d’enseignant à l’intention des étudiants et médecins. Très vite ce sont de nouveaux patients qui se sont signalés en plaçant deux ou trois mots clés sur les moteurs de recherche. Ainsi en 0,3 secondes, avec Google, ils se trouvaient en face de la nouvelle description, dans laquelle ils se reconnaissaient, se demandant comment je les connaissais si bien ! Ce dispositif informatique a permis à un très grand nombre de patients d’être dépistés et traités rapidement. Il faut noter, aussi, que ce dispositif a permis à une nouvelle présentation d’une maladie jusque là incomplètement décrite et mal connue d’être diffusée rapidement.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{# VIDE N°9 #}
+				<div class=" col-md-10 col-lg-3 mx-3 mb-3 mx-sm">
+                    {# card 1 #}
+                    <div class="mx-auto my-auto heightCard3">
+                        {# <h5 class="card-title">De la prévalence (nombre de cas existants) de la maladie d’Ehlers-Danlos dans la population française.</h5>  #}
+                        
+						{# Image #}
+						{# <img src="{{ asset('assets/img/femme3.jpg') }}" alt="stetoscope" class="card-img-top"> #}
+                        {# <div class="card-body">  #}
+
+                            {# <p class="card-text">Le Syndrome (ou maladie) d’Ehlers-Danlos est l’expression clinique d’une atteinte du tissu conjonctif (80% environ des constituants d’un corps humain) ...</p> #}
+                            {# <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLongSeven">
+								Lire la suite
+							</button> #}
+                        {# </div> #}
+                    </div>
+				</div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+	{% block javascripts %}
+		<script>
+
+        // $("#button0").on("click", function () {
+        // if ($("#text0").hasClass("hidden")) {
+        //     $("#text0").removeClass('hidden');
+        //     $("#button0").text('Cacher');
+        // } else {
+        //     $("#text0").addClass('hidden');
+        //     $("#button0").text('Afficher');
+        // }
+        // });
+
+		</script>
+	{% endblock %}
+
+	{# <script src="assets/js/a_propos.js"></script> #}
+{% endblock %}

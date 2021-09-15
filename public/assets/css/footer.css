@@ -1,0 +1,11 @@
+.bg-footer{
+    /* background-color: #2c2c2c !important; */
+    background: linear-gradient(#353535, #000000);
+}
+
+.borderTopDore{
+    border-top: var(--dore) solid 1.5px;
+}
+
+
+

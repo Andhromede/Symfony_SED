@@ -1,0 +1,86 @@
+/*********** Background ***********/
+/* modifie le dropdown en petit format */
+@media (max-width: 991px) {
+    .bgMini{
+        background-color: var(--grisNavbar) !important;
+        border: 1.5px white solid;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px 3px inset #141414;
+    }
+}
+
+/*********** liens (accueil, contact etc) ***********/
+    .titleNav{
+        color: white !important;
+        font-size: 1.4em;
+    }
+
+    .titleNav:hover{
+        color: var(--dore) !important;
+        /* background-color: var(--or); */
+        border-radius: 5px; 
+    }
+
+
+/*********** dropdowns subtitles ***********/
+    .subTitleNav{
+        color: white;
+        background-color: black;
+    }
+
+    .subTitleNav:hover{
+        color: var(--dore);
+        background-color: black;
+    }
+
+    .user {
+        margin-left: auto;
+    }
+
+        @media (max-width: 991px) {
+            .user{
+                text-align: left;
+                justify-content: left;
+                align-items: left;
+                margin-left: 47px;
+            }
+        }
+
+
+/*********** Titres à gauche ***********/
+    .title{
+        color: white;
+        font-size: 2em;
+    }
+
+    .title:hover{
+        text-decoration: none;
+        color: white;
+    }
+
+/*********** trait de séparation ***********/
+    .separateur{
+        background-color: white;
+        height: 3em;
+        width: 1px;
+    }
+
+    @media (max-width: 991px) {
+        .separateur{
+        display: none;
+        }
+    }
+
+    .bgColor{
+        background-color: black !important;  
+    }
+
+    .bordBottomDore{
+        border-bottom: var(--dore) 1.5px solid;
+    }
+
+    body{
+        font-family: "Playfair Display", serif !important;
+    }
+
+    

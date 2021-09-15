@@ -1,0 +1,62 @@
+
+/***** padding cotés sur sections horizontal *****/
+.p-CadreHorizon{
+    padding-right: 6.5%;
+    padding-left: 6.5%;
+}
+
+/***** margin entre les blocs txt *****/
+.mt-6{
+    margin-top: 100px;
+}
+
+/***** Cadre noir sous les blocs txt *****/
+.bg-body{
+    /* background: linear-gradient(to right, #1d1d1d, #4e4e4e); */
+    background-color: #292929;
+    color: white;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+/***** encadré section text noir *****/
+.cadreNoir{
+    border: #ada24f solid 3px;
+    padding: 20px;
+    background-color: #252525;
+    color: white;
+}
+
+/***** encadré section text blanc *****/
+.cadreBlanc{
+    border: #ada24f solid 3px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+/***** modif. padding/margin (cadreBlanc) en petit format *****/
+@media (max-width: 993px){
+    .cadreBlanc{
+        border: #ada24f solid 3px;
+        background-color: white;
+        color: black;
+        
+    }
+
+    .mx-sm{
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+} 
+
+
+
+
+
+
+
+
+
