@@ -17,7 +17,6 @@
 
     .titleNav:hover{
         color: var(--dore) !important;
-        /* background-color: var(--or); */
         border-radius: 5px; 
     }
 
@@ -83,4 +82,3 @@
         font-family: "Playfair Display", serif !important;
     }
 
-    

@@ -31,65 +31,6 @@ a:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .essai{
-    margin-top: 30em !important;
-}
-
-.sizeImg{
-    height: 500px !important;
-} */
-
-.bgOpac{
-    background-color: black !important;
-    opacity: 0.6;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -128,7 +69,7 @@ a:hover{
   --------------------------------------------------------------*/
     #hero {
         height: 100vh;
-        background: url("../img/hero-bg.jpg") top center;
+        background: url("../img/sed/recherche.jpeg") top center;
         background-size: cover;
         position: relative;
         padding: 0;
@@ -431,7 +372,7 @@ a:hover{
   # About
   --------------------------------------------------------------*/
     .about {
-        background: url("../img/about-bg.jpg") center center;
+        background: url("../img/sed/ordi.jpeg") center center;
         background-size: cover;
         position: relative;
         padding: 80px 0;
@@ -733,7 +674,7 @@ a:hover{
   # Events
   --------------------------------------------------------------*/
     .events {
-        background: url(../img/events-bg.jpg) center center no-repeat;
+        background: url(../img/sed/kine.jpeg) center center no-repeat;
         background-size: cover;
         position: relative;
     }
