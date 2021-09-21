@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/header.css')}}">
 {% endblock %}
 
-<nav class="navbar navbar-expand-lg bgColor navbar-dark container-fluid fixed-top bordBottomDore">
+	<nav class="navbar navbar-expand-lg bgColor navbar-dark container-fluid fixed-top bordBottomDore">
 		<span class="navbar-brand title font-weight-bolder" href="#">SED Infos</span>
 
 		<span class="separateur ml-5"></span>
@@ -35,17 +35,43 @@
 				    </li>
 			    </ul>
 
-                <li class="nav-item mr-4 li">
+                <li class="nav-item mr-4 li d-lg-none">
 					<a class="nav-link a-class titleNav" href="">Forum</a>
 				</li>
 
-				<li class="nav-item mr-4 li">
-					<a class="nav-link a-class titleNav" href="">Nous contacter</a>
+				<li class="nav-item mr-4 li d-lg-none">
+					<a class="nav-link a-class titleNav" href="">Contact</a>
 				</li>
 			</ul>
 
 			<ul class="navbar-nav user">
-				<li class="nav-item dropdown  li">
+				<li class="nav-item dropdown li my-auto mr-5 hidden" title="Forum" data-toggle="tooltip" data-placement="bottom">
+					<a href="" class="titleNav" >
+						<i class="bi bi-bank h3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item dropdown li my-auto mr-5 hidden" title="Contactez-nous" data-toggle="tooltip" data-placement="bottom">
+					<a href="" class="titleNav" >
+						<i class="bi bi-envelope h3"></i>
+					</a>
+				</li>
+
+				{# SECOND AFFICHAGE#}
+				{# <li class="nav-item dropdown li my-auto mr-5 hidden text-center" title="Forum" data-toggle="tooltip" data-placement="bottom">
+					<a href="" class="titleNav" >
+						<i class="bi bi-bank h4"><div class="h5 mbNeg">Forum</div></i>
+					</a>
+				</li>
+
+				<li class="nav-item dropdown li my-auto mr-5 hidden  text-center" title="Contactez-nous" data-toggle="tooltip" data-placement="bottom">
+					<a href="" class="titleNav" >
+						<i class="bi bi-envelope h4"><div class="h5 mbNeg">Contact</div></i>
+					</a>
+				</li> #}
+				{# FIN SECOND AFFICHAGE#}
+
+				<li class="nav-item dropdown li">
 					<a class="nav-link dropdown-toggle a-class titleNav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Utilisateur
 					</a>
@@ -60,5 +86,11 @@
 				</li>
 			</ul>
 		</div>
-	
 	</nav>
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+
+	

@@ -2,10 +2,10 @@
 /* modifie le dropdown en petit format */
 @media (max-width: 991px) {
     .bgMini{
-        background-color: var(--grisNavbar) !important;
-        border: 1.5px white solid;
+        background-color: var(--black) !important;
+        border: 1.5px var(--dore) solid;
         border-radius: 10px;
-        box-shadow: 3px 3px 3px 3px inset #141414;
+        /* box-shadow: 3px 3px 3px 3px inset #141414; */
     }
 }
 
@@ -24,15 +24,17 @@
 /*********** dropdowns subtitles ***********/
     .subTitleNav{
         color: white;
-        background-color: black;
+        background-color: var(--black);
     }
 
     .subTitleNav:hover{
         color: var(--dore);
-        background-color: black;
+        background-color: var(--black);
     }
 
-    .user {
+/* ATTENTION !!! ne pas utiliser le ml-auto dans le 
+    html sinon le text sera decalé en petit format  */
+    .user{
         margin-left: auto;
     }
 
@@ -64,14 +66,14 @@
         width: 1px;
     }
 
-    @media (max-width: 991px) {
+    @media (max-width: 1090px) {
         .separateur{
-        display: none;
+            display: none;
         }
     }
 
     .bgColor{
-        background-color: black !important;  
+        background-color: var(--black);  
     }
 
     .bordBottomDore{
@@ -82,3 +84,27 @@
         font-family: "Playfair Display", serif !important;
     }
 
+
+/*********** modifications infobull ***********/
+    .tooltip .tooltip-inner{
+        border: var(--dore) 1.5px solid;
+        /* height: 40px;
+        width: 80px; */
+        font-size: 1.3em;
+    }
+
+    @media (max-width: 992px) {
+        .hidden{
+            display: none;
+        }
+    }
+
+/* 
+    .tooltip .arrow{
+        color:red;
+        background-color: red;
+    } */
+
+.mbNeg{
+    margin-bottom: -5px;
+}
