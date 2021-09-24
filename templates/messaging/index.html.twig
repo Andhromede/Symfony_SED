@@ -1,0 +1,230 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Messagerie{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('assets/css/messaging.css')}}">
+	<link rel="stylesheet" href="{{ asset('assets/css/a_general.css')}}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+{% endblock %}
+
+
+{% block body %}
+	<div class="container col-10 py-5 px-4 affichage">
+		<div class="row rounded-lg overflow-hidden shadow borderColor">
+			<!-- Users box-->
+			<div class="col-3 px-0">
+				{# <div class=""> #}
+
+					<div class="bg-gray px-4 py-2 bg-light">
+						<p class="h5 mb-0 py-1">Vos contacts</p>
+					</div>
+
+					<div class="messages-box">
+						<div class="list-group rounded-0">
+							<a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+								<div class="media"><img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="user" width="50" class="rounded-circle">
+									<div class="media-body ml-4">
+										<div class="d-flex align-items-center justify-content-between mb-1">
+											<h6 class="mb-0">Jason Doe</h6>
+											<small class="small font-weight-bold">14 Dec</small>
+										</div>
+
+										<p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur. incididunt ut labore.</p>
+									</div>
+								</div>
+							</a>
+
+							<a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+								<div class="media"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user" width="50" class="rounded-circle">
+									<div class="media-body ml-4">
+										<div class="d-flex align-items-center justify-content-between mb-1">
+											<h6 class="mb-0">Zorgus</h6>
+											<small class="small font-weight-bold">14 Dec</small>
+										</div>
+
+										<p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur. incididunt ut labore.</p>
+									</div>
+								</div>
+							</a>
+
+							<a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+								<div class="media"><img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user" width="50" class="rounded-circle">
+									<div class="media-body ml-4">
+										<div class="d-flex align-items-center justify-content-between mb-1">
+											<h6 class="mb-0">Jason Doe</h6>
+											<small class="small font-weight-bold">9 Nov</small>
+										</div>
+
+										<p class="font-italic text-muted mb-0 text-small">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+									</div>
+								</div>
+							</a>
+
+							<a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+								<div class="media"><img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="user" width="50" class="rounded-circle">
+									<div class="media-body ml-4">
+										<div class="d-flex align-items-center justify-content-between mb-1">
+											<h6 class="mb-0">Jason Doe</h6>
+											<small class="small font-weight-bold">18 Oct</small>
+										</div>
+
+										<p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+									</div>
+								</div>
+							</a>
+
+							<a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+								<div class="media"><img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user" width="50" class="rounded-circle">
+									<div class="media-body ml-4">
+										<div class="d-flex align-items-center justify-content-between mb-1">
+											<h6 class="mb-0">Jason Doe</h6>
+											<small class="small font-weight-bold">17 Oct</small>
+										</div>
+
+										<p class="font-italic text-muted mb-0 text-small">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+									</div>
+								</div>
+							</a>
+
+							<a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+								<div class="media"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="user" width="50" class="rounded-circle">
+									<div class="media-body ml-4">
+										<div class="d-flex align-items-center justify-content-between mb-1">
+											<h6 class="mb-0">Jason Doe</h6>
+											<small class="small font-weight-bold">2 Sep</small>
+										</div>
+
+										<p class="font-italic text-muted mb-0 text-small">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</div>
+								</div>
+							</a>
+
+							<a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+								<div class="media"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="user" width="50" class="rounded-circle">
+									<div class="media-body ml-4">
+										<div class="d-flex align-items-center justify-content-between mb-1">
+											<h6 class="mb-0">Jason Doe</h6>
+											<small class="small font-weight-bold">30 Aug</small>
+										</div>
+
+										<p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				{# </div> #}
+			</div>
+            
+			<!-- Chat Box-->
+			<div class="col-9 px-0">
+				<div class="px-4 py-5 chat-box bg-white">
+					<!-- Sender Message-->
+					<div class="media w-50 mb-3"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user" width="50" class="rounded-circle">
+						<div class="media-body ml-3">
+							<div class="bgSender rounded py-2 px-3 mb-2">
+								<p class="text-dark font-weight-bolder text-small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+                            
+                            <div class="row">   
+                                <span class="ml-3 text-muted font-weight-bolder col-md-12 col-lg-7">vous</span>
+							    <span class="small text-muted col-md-12 col-lg-4">12:00 PM | Aug 13</span>
+                            </div>
+						</div>
+					</div>
+
+					<!-- Reciever Message-->
+					<div class="media w-50 ml-auto mb-3"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user" width="50" class="rounded-circle mr-2">
+						<div class="media-body">
+							<div class="bgReciever rounded py-2 px-3 mb-2">
+								<p class="text-small mb-0 text-white">Odio nostrum impedit, esse eligendi optio unde officiis nisi iste.</p>
+							</div>
+
+                            <div class="row">   
+                                <span class="ml-3 text-muted font-weight-bolder col-md-12 col-lg-7">zorgus</span>
+							    <span class="small text-muted col-md-12 col-lg-4">12:00 PM | Aug 13</span>
+                            </div>
+						</div>
+					</div>
+
+					<!-- Sender Message-->
+					<div class="media w-50 mb-3"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user" width="50" class="rounded-circle">
+						<div class="media-body ml-3">
+							<div class="bgSender rounded py-2 px-3 mb-2">
+								<p class="text-dark font-weight-bolder text-small mb-0">Nulla aperiam modi reprehenderit sequi ex fugit corrupti reiciendis quos recusandae, iusto sint!</p>
+							</div>
+							
+                            <div class="row">   
+                                <span class="ml-3 text-muted font-weight-bolder col-md-12 col-lg-7">vous</span>
+							    <span class="small text-muted col-md-12 col-lg-4">12:00 PM | Aug 13</span>
+                            </div>
+						</div>
+					</div>
+
+					<!-- Reciever Message-->
+					<div class="media w-50 ml-auto mb-3"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user" width="50" class="rounded-circle mr-2">
+						<div class="media-body">
+							<div class="bgReciever rounded py-2 px-3 mb-2">
+								<p class="text-small mb-0 text-white">Similique magni error non eius deleniti! Nulla illo harum ducimus quibusdam sequi.</p>
+							</div>
+							
+                            <div class="row">   
+                                <span class="ml-3 text-muted font-weight-bolder col-md-12 col-lg-7">zorgus</span>
+							    <span class="small text-muted col-md-12 col-lg-4">12:00 PM | Aug 13</span>
+                            </div>
+						</div>
+					</div>
+
+					<!-- Sender Message-->
+					<div class="media w-50 mb-3"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user" width="50" class="rounded-circle">
+						<div class="media-body ml-3">
+							<div class="bgSender rounded py-2 px-3 mb-2">
+								<p class="text-dark font-weight-bolder text-small mb-0">Labore culpa repellendus vitae deleniti libero temporibus architecto sunt similique.</p>
+							</div>
+							
+                            <div class="row">   
+                                <span class="ml-3 text-muted font-weight-bolder col-md-12 col-lg-7">vous</span>
+							    <span class="small text-muted col-md-12 col-lg-4">12:00 PM | Aug 13</span>
+                            </div>
+						</div>
+					</div>
+
+					<!-- Reciever Message-->
+					<div class="media w-50 ml-auto mb-3"> <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user" width="50" class="rounded-circle mr-2">
+						<div class="media-body">
+							<div class="bgReciever rounded py-2 px-3 mb-2">
+								<p class="text-small mb-0 text-white">Placeat laboriosam illum excepturi molestiae voluptatibus asperiores aliquid ipsa deleniti, accusamus corporis.</p>
+							</div>
+							
+                            <div class="row">   
+                                <span class="ml-3 text-muted font-weight-bolder col-md-12 col-lg-7">zorgus</span>
+							    <span class="small text-muted col-md-12 col-lg-4">12:00 PM | Aug 13</span>
+                            </div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Typing area -->
+				<form action="#" class="bg-light">
+					<div class="input-group">
+						<input type="text" placeholder="Tappez votre message ici" aria-describedby="button-addon2" class="form-control rounded-0 border-0 py-4 bgSendMessage text-dark">
+						<div class="input-group-append">
+							<button id="button-addon2" type="submit" class="btn btn-link bgSendMessage">
+								<i class="fa fa-paper-plane"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+
+
+{% endblock %}
+
+{% block javascripts %}
+       
+{% endblock %}
