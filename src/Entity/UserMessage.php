@@ -18,12 +18,12 @@ class UserMessage{
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity=user::class, inversedBy="userMessages")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="userMessages")
      */
     private $user;
 
     /**
-     * @ORM\ManyToOne(targetEntity=message::class, inversedBy="userMessages")
+     * @ORM\ManyToOne(targetEntity=Message::class, inversedBy="userMessages")
      */
     private $message;
 

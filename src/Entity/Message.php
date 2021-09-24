@@ -24,7 +24,7 @@ class Message{
     private $text;
 
     /**
-     * @ORM\Column(type="date")
+     * @ORM\Column(type="string")
      */
     private $post_date;
 
@@ -61,11 +61,11 @@ class Message{
         return $this;
     }
 
-    public function getPostDate(): ?\DateTimeInterface{
+    public function getPostDate(): string{
         return $this->post_date;
     }
 
-    public function setPostDate(\DateTimeInterface $post_date): self{
+    public function setPostDate(string $post_date): self{
         $this->post_date = $post_date;
         return $this;
     }

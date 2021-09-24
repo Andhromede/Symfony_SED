@@ -24,7 +24,7 @@ a:hover{
 }
 
 .btnEnvoi{
-    background-color: var(--dore);
+    background-color: var(--gold);
 }
 
 
@@ -312,7 +312,7 @@ a:hover{
         font-family: "Playfair Display", serif;
     }
 
-    .colorDore{
+    .colorGold{
         color: #cda45e;
     }
   

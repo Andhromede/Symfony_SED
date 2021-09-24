@@ -4,9 +4,10 @@
         font-family: 'verdana', 'Halant', 'arial';
 
         --grey:#343B3E;
+        --lightGrey: #DBDBDB;
         --black: #181818;
-        --noirClair:#1A1814;
-        --dore:#CDA45E;
+        --lightBlack:#1A1814;
+        --gold:#CDA45E;
     }
 
 /*********** margin sous navbar ***********/
@@ -20,4 +21,13 @@
 
     .bgBlack{
         background-color: black;
+    }
+
+/*********** font ***********/
+    .textGold{
+        color: var(--gold) !important;
+    }
+
+    .textBlack{
+        color: black;
     }

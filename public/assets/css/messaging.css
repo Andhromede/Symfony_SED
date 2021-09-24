@@ -14,7 +14,7 @@
     
     ::-webkit-scrollbar-thumb {
         width: 1em;
-        background-color: var(--dore);
+        background-color: var(--gold);
         /* outline: 1px solid slategrey; */
         border-radius: 1rem;
     }
@@ -43,7 +43,7 @@
     }
 
     .borderColor{
-        border: var(--dore) 2px solid;
+        border: var(--gold) 2px solid;
     }
 
     .bgReciever{
@@ -51,7 +51,7 @@
     }
 
     .bgSender{
-        background-color: var(--dore);
+        background-color: var(--gold);
     }
 
     .bgSendMessage, .bgSendMessage:focus{

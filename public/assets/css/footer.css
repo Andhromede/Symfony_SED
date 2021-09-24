@@ -3,8 +3,8 @@
         /* background: linear-gradient(#353535, #000000); */
     }
 
-    .borderTopDore{
-        border-top: var(--dore) solid 1.5px;
+    .borderTopGold{
+        border-top: var(--gold) solid 1.5px;
     }
 
 
@@ -17,7 +17,7 @@
 
     .iCons:hover{
         color: var(--black);
-        background: var(--dore) !important;
+        background: var(--gold) !important;
         border-radius: 5px; 
         padding-left: 3.5px;
         padding-right: 3.5px;

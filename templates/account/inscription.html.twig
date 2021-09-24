@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('assets/css/a_general.css')}}">
+	<link rel="stylesheet" href="{{ asset('assets/css/inscription.css')}}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+{% endblock %}
+
+{% block body %}
+
+    <div class="container ">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Inscription</h3>
+                </div>
+
+                <div class="card-body">
+                    {{ form_start(userForm) }}
+                    
+                        <!-- Username -->
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            {# <input type="text" class="form-control" placeholder="Login" name="txtLogin" required> #}
+                            {{ form_widget(userForm.login) }}
+                        </div>
+
+                        <!-- Email -->
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                            </div>
+                              {# <input type="email" class="form-control" placeholder="Email" name="txtEmail" required> #}
+                            {{ form_widget(userForm.email) }}
+                        </div>
+
+                        <!-- Password -->
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            {{ form_widget(userForm.password) }}
+                            {# <input type="password" class="form-control" placeholder="Mots de passe" name="txtPassword" required> #}
+                        </div>
+
+                        <!-- Confirm password -->
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            {{ form_widget(userForm.confirmPassword) }}
+                            {# <input type="password" class="form-control" placeholder="Mots de passe" name="txtConfirmPassword" required> #}
+                        </div>
+
+                        <!-- Btn -->
+                        <div class="form-group mx-auto row">
+                            {# <button type="submit" value="Valider" class="btn login_btn col-4">Valider</button> #}
+                            {{ form_widget(userForm.submit) }}
+                            <div class="d-flex justify-content-center links col-8 mt-2">
+                                Page de <a href="connexion.php">Connexion</a>
+                            </div>
+                        </div>
+                    {# </form> #}
+
+                    {% do userForm.role.setRendered %}
+                    {{ form_end(userForm, {'render_rest': false}) }}
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{# <script>
+    setTimeout(function(){ 
+        $('.messageConnexion').addClass('d-none');
+    }, 5000);
+</script> #}

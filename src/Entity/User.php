@@ -44,7 +44,7 @@ class User{
     private $image;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="boolean", nullable=true)
      */
     private $actif;
 
@@ -117,7 +117,7 @@ class User{
         return $this->actif;
     }
 
-    public function setActif(bool $actif): self{
+    public function setActif(?bool $actif): self{
         $this->actif = $actif;
         return $this;
     }

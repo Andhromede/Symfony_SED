@@ -18,31 +18,36 @@ class Friend{
     private $id;
 
     /**
-     * @ORM\Column(type="date", nullable=true)
+     * @ORM\Column(type="string", nullable=true)
      */
-    private $friend_date;
+    private $relation_date;
 
     /**
-     * @ORM\ManyToOne(targetEntity=user::class, inversedBy="friends")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="friends")
      */
     private $user;
 
     /**
-     * @ORM\ManyToOne(targetEntity=user::class, inversedBy="friends")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="friends")
      */
     private $friend;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $status;
 
 
     public function getId(): ?int{
         return $this->id;
     }
 
-    public function getFriendDate(): ?\DateTimeInterface{
-        return $this->friend_date;
+    public function getFriendDate(): ?string{
+        return $this->relation_date;
     }
 
-    public function setFriendDate(?\DateTimeInterface $friend_date): self{
-        $this->friend_date = $friend_date;
+    public function setFriendDate(string $relation_date): self{
+        $this->relation_date = $relation_date;
         return $this;
     }
 
@@ -61,6 +66,15 @@ class Friend{
 
     public function setFriend(?user $friend): self{
         $this->friend = $friend;
+        return $this;
+    }
+
+    public function getStatus(): ?string{
+        return $this->status;
+    }
+
+    public function setStatus(string $status): self{
+        $this->status = $status;
         return $this;
     }
 

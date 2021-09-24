@@ -3,7 +3,7 @@
 @media (max-width: 991px) {
     .bgMini{
         background-color: var(--black) !important;
-        border: 1.5px var(--dore) solid;
+        border: 1.5px var(--gold) solid;
         border-radius: 10px;
         /* box-shadow: 3px 3px 3px 3px inset #141414; */
     }
@@ -16,7 +16,7 @@
     }
 
     .titleNav:hover{
-        color: var(--dore) !important;
+        color: var(--gold) !important;
         border-radius: 5px; 
     }
 
@@ -28,7 +28,7 @@
     }
 
     .subTitleNav:hover{
-        color: var(--dore);
+        color: var(--gold);
         background-color: var(--black);
     }
 
@@ -76,8 +76,8 @@
         background-color: var(--black);  
     }
 
-    .bordBottomDore{
-        border-bottom: var(--dore) 1.5px solid;
+    .borderTopGold{
+        border-bottom: var(--gold) 1.5px solid;
     }
 
     body{
@@ -87,7 +87,7 @@
 
 /*********** modifications infobull ***********/
     .tooltip .tooltip-inner{
-        border: var(--dore) 1.5px solid;
+        border: var(--gold) 1.5px solid;
         /* height: 40px;
         width: 80px; */
         font-size: 1.3em;
