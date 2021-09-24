@@ -19,7 +19,7 @@
 
                 <div class="card-body">
                     {{ form_start(userForm) }}
-                    
+
                         <!-- Username -->
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
@@ -68,6 +68,7 @@
 
                     {% do userForm.role.setRendered %}
                     {{ form_end(userForm, {'render_rest': false}) }}
+                     {# {{ form_end(userForm) }} #}
 
                 </div>
                

@@ -76,10 +76,6 @@
         background-color: var(--black);  
     }
 
-    .borderTopGold{
-        border-bottom: var(--gold) 1.5px solid;
-    }
-
     body{
         font-family: "Playfair Display", serif !important;
     }
@@ -107,4 +103,8 @@
 
 .mbNeg{
     margin-bottom: -5px;
+}
+
+.borderBottomGold{
+    border-bottom: var(--gold) solid 1.5px !important;
 }
