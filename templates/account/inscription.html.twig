@@ -18,6 +18,7 @@
                 </div>
 
                 <div class="card-body">
+                    {# {{ form_start(userForm, {'action': path('inscription')}) }} #}
                     {{ form_start(userForm) }}
 
                         <!-- Username -->
@@ -60,15 +61,24 @@
                         <div class="form-group mx-auto row">
                             {# <button type="submit" value="Valider" class="btn login_btn col-4">Valider</button> #}
                             {{ form_widget(userForm.submit) }}
+
                             <div class="d-flex justify-content-center links col-8 mt-2">
                                 Page de <a href="connexion.php">Connexion</a>
                             </div>
                         </div>
+
+                        <div class="">
+                            {{ form_widget(userForm.role) }}
+                        </div>
+
+                        <div class="">
+                            {{ form_widget(userForm.actif) }}
+                        </div>
                     {# </form> #}
 
-                    {% do userForm.role.setRendered %}
-                    {{ form_end(userForm, {'render_rest': false}) }}
-                     {# {{ form_end(userForm) }} #}
+                    {# {% do userForm.role.setRendered %} #}
+                    {# {{ form_end(userForm, {'render_rest': false}) }} #}
+                     {{ form_end(userForm) }}
 
                 </div>
                

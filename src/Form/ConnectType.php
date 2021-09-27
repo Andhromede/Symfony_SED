@@ -46,30 +46,38 @@ class ConnectType extends AbstractType {
                     'mapped' => false, 'required' => true,
 
                     'attr' => [ 'class' => 'form-control',
-                            'placeholder' => 'Mots de passe',
-                            'name' => 'password',
-                            'required']
-                ])
+                                'placeholder' => 'Mots de passe',
+                                'name' => 'password',
+                                'required'
+                              ]
+            ])
 
             ->add('role', ChoiceType::class,[
-                'choices' => [  'Administrateur' => true,
-                                'Utilisateur' => true
-                            ],
+                'multiple'=> false,
                 
-                'label' => 'Role',
+                'choices' => [  'Utilisateur' => 'ROLE_USER'
+                                // 'Administrateur' => 'ROLE_ADMIN'
+                             ],
 
-                'attr' => [ 'class' => 'form-control',
+                'attr' => [ 'class' => 'form-control d-none',
                             'input' => 'title',
                             'name' => 'role',
-                            'id' => 'role'
-                          ]
+                            'id' => 'role',
+                            'value' => 'ROLE_USER'
+                          ],
+
+                'choice_attr' => [ 'Utilisateur' => ['attr' => 'selected',
+                                                     'value' => 'ROLE_USER'
+                                                    ],
+                                 ],
             ])
 
             ->add('actif', TextType::class,[
-                'attr' => [ 'class' => 'form-control',
-                            'placeholder' => 'Login',
-                            'name' => 'login',
-                            'required'
+                'attr' => [ 'class' => 'form-control d-none',
+                            'placeholder' => 'actif',
+                            'name' => 'actif',
+                            // 'required'
+                            'value' => 'true',
                           ]
             ])
 
@@ -77,7 +85,9 @@ class ConnectType extends AbstractType {
               'attr' => [ 'class' => 'btn login_btn col-4',
                           'value' => 'Valider'
                         ]
-            ]);
+            ])
+            //->setAction($this->generateUrl('/inscription'))
+            ;
         
     }
 
