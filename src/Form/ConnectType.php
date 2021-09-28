@@ -52,7 +52,7 @@ class ConnectType extends AbstractType {
                               ]
             ])
 
-            ->add('role', ChoiceType::class,[
+            ->add('roles', ChoiceType::class,[
                 'multiple'=> false,
                 
                 'choices' => [  'Utilisateur' => 'ROLE_USER',
@@ -61,8 +61,8 @@ class ConnectType extends AbstractType {
 
                 'attr' => [ 'class' => 'form-control d-none',
                             'input' => 'title',
-                            'name' => 'role',
-                            'id' => 'role'
+                            'name' => 'roles',
+                            'id' => 'roles'
                            //  'value' => 'ROLE_MODO'
                           ],
 

@@ -3,14 +3,15 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  */
-class User{
+class User implements UserInterface, PasswordAuthenticatedUserInterface {
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -24,19 +25,21 @@ class User{
     private $login;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=180, unique=true)
      */
     private $email;
 
-    /**
-     * @ORM\Column(type="string", length=255)
+      /**
+     * @var string The hashed password
+     * @ORM\Column(type="string")
      */
     private $password;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * 
      */
-    private $role;
+    private $roles;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
@@ -48,7 +51,7 @@ class User{
      */
     private $actif;
 
-    /**
+     /**
      * @ORM\OneToMany(targetEntity=UserMessage::class, mappedBy="user")
      */
     private $userMessages;
@@ -58,13 +61,8 @@ class User{
      */
     private $friends;
 
-    public function __construct() {
-        $this->userMessages = new ArrayCollection();
-        $this->friends = new ArrayCollection();
-    }
 
-
-    public function getId(): ?int{
+    public function getId(): ?int {
         return $this->id;
     }
 
@@ -77,6 +75,22 @@ class User{
         return $this;
     }
 
+    /**
+     * A visual identifier that represents this user.
+     *
+     * @see UserInterface
+     */
+    public function getUserIdentifier(): string {
+        return (string) $this->email;
+    }
+
+    /**
+     * @deprecated since Symfony 5.3, use getUserIdentifier instead
+     */
+    public function getUsername(): string {
+        return (string) $this->email;
+    }
+
     public function getEmail(): ?string{
         return $this->email;
     }
@@ -86,22 +100,43 @@ class User{
         return $this;
     }
 
-    public function getPassword(): ?string{
+    /**
+     * @see PasswordAuthenticatedUserInterface
+     */
+    public function getPassword(): string {
         return $this->password;
     }
 
-    public function setPassword(string $password): self{
+    public function setPassword(string $password): self {
         $this->password = $password;
         return $this;
     }
 
-    public function getRole(): ?string{
-        return $this->role;
+    public function getRoles(): ?string{
+        return $this->roles;
     }
 
-    public function setRole(string $role): self{
-        $this->role = $role;
+    public function setRoles(string $roles): self{
+        $this->roles = $roles;
         return $this;
+    }
+
+    /**
+     * Returning a salt is only needed, if you are not using a modern
+     * hashing algorithm (e.g. bcrypt or sodium) in your security.yaml.
+     *
+     * @see UserInterface
+     */
+    public function getSalt(): ?string {
+        return null;
+    }
+
+    /**
+     * @see UserInterface
+     */
+    public function eraseCredentials() {
+        // If you store any temporary, sensitive data on the user, clear it here
+        // $this->plainPassword = null;
     }
 
     public function getImage(): ?string{
@@ -177,7 +212,4 @@ class User{
         return $this;
     }
 
-
-
-    
 }
