@@ -5,7 +5,7 @@ security:
     password_hashers:
         Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
         App\Entity\User:
-            algorithm: auto
+            algorithm: argon2id
 
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
@@ -34,8 +34,3 @@ security:
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
 
-
-    # password_hashers:
-    #     App\Entity\User:
-    #         algorithm: 'argon2id'
-            # algorithm: sodium

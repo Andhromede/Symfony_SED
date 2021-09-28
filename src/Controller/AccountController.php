@@ -50,28 +50,16 @@ class AccountController extends AbstractController {
         $user = new User();
         $form = $this->createForm(ConnectType::class, $user);
         $form->handleRequest($request);
-    	// var_dump($user);
+    	// dd($user);
 
         if($form->isSubmitted() && $form->isValid()){
-            // $user->setPassword($encoder->encodePassword($user,$form->get('password')->getData()));
-
-            //récupère la valeur de la propriété password du user passer dans le form
             $password = $form->get('password')->getData();
-            
-            // $pwhf = new PasswordHasherFactory([
-            //     'common' => ['algorithm' => 'argon2id'],
-            // ]);
             $passwordHasher = $this->hasherFactory->getPasswordHasher('common');
             $hashed = $passwordHasher->hash($password);
-
-            // $newPassord = $encoder->encodePassword($user, $hashed);
-            // dd($newPassord);
             $user->setPassword($hashed);
-
             $manager->persist($user);
             $manager->flush();
         }
-
         
         return new Response($twig->render('account/inscription.html.twig', [
             'userForm' => $form->createView()
