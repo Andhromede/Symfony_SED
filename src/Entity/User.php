@@ -36,7 +36,7 @@ class User{
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $role = "ROLE_USER";
+    private $role;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
