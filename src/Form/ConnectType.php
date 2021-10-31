@@ -55,21 +55,21 @@ class ConnectType extends AbstractType {
             ->add('role', ChoiceType::class,[
                 'multiple'=> false,
                 
-                'choices' => [  'Utilisateur' => 'ROLE_USER'
-                                // 'Administrateur' => 'ROLE_ADMIN'
+                'choices' => [  'Utilisateur' => 'ROLE_USER',
+                                'Administrateur' => 'ROLE_ADMIN'
                              ],
 
                 'attr' => [ 'class' => 'form-control d-none',
                             'input' => 'title',
                             'name' => 'role',
-                            'id' => 'role',
-                            'value' => 'ROLE_USER'
+                            'id' => 'role'
+                           //  'value' => 'ROLE_MODO'
                           ],
 
-                'choice_attr' => [ 'Utilisateur' => ['attr' => 'selected',
-                                                     'value' => 'ROLE_USER'
-                                                    ],
-                                 ],
+               //  'choice_attr' => [ 'Utilisateur' => ['attr' => 'selected',
+               //                                       'value' => 'ROLE_USER'
+               //                                      ],
+               //                   ],
             ])
 
             ->add('actif', TextType::class,[
@@ -88,7 +88,6 @@ class ConnectType extends AbstractType {
             ])
             //->setAction($this->generateUrl('/inscription'))
             ;
-        
     }
 
     public function configureOptions(OptionsResolver $resolver) {
